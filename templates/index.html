@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<title>Grocery List</title>
+
+<h2>Do We Need Bananas?</h2>
+<img class="image-shadow" src="/static/groceries.jpg" alt='a bag of groceries' width="412">
+
+<p class="listStart">A collaborative grocery list app.</p>
+
+{% for entry in entries %}
+    <div>
+        <p>
+            <b>{{ entry.product }}</b>
+        </p>
+    </div>
+    <div class="entry">
+        <div><p><img class="image-shadow" src={{ entry.image }} alt={{ entry.product }} width="150"></p></div>
+        <div>{{ entry.description }} <br>
+            category: {{ entry.category }} <br>
+            location: {{ entry.location }} <br>
+        </div>
+    </div>
+{% endfor %}
+
+<p class="end">
+    <form action="{{ url_for('add_groceries') }}" method=get>
+        <input class="button" type=submit value="Add to list">
+    </form>
+</p>
+
+<form action="{{ url_for('del_grocery') }}" method=get>
+    <input class="button" type=submit value="Delete from list">
+</form>
+
+{% endblock %}
