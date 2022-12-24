@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<link rel="icon" type="image/x-icon" href="/static/bananas.jpg">
+</head>
+<body>
+
+<div class=page>
+    <div class="background">
+        {% block content %}{% endblock %}
+    </div>
+</div>
+</body>
+</html>

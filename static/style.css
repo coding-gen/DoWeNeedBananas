@@ -1,0 +1,24 @@
+body 		{ font-family: "Helvetica", sans-serif; font-size: 20px; color: #000000;}
+h1, h2		{ color: #074664; }
+a 			{ color: #2596BE; }
+form 		{ margin:.1em auto; padding:.1em; width: 400px; border: 13px ; }
+
+.background { background-color: #e1eedd; padding:  2em; border: 0.3em solid #0E4D64;}
+.heading  	{ font-weight: bold; }
+.page      	{ margin:.1em auto; padding:.1em; width: 504px;  }
+.entry 		{ margin-bottom: 1em; padding-bottom: 1em; border-bottom: 2px solid #074664; }
+.end 		{ margin-top: 1em; margin-bottom: 2em;}
+.warning	{ font-size: 12px; color: #FE8529}
+.center 	{ text-align: center;}
+.listStart	{ margin-bottom: 1em; padding-bottom: 1em; border-bottom: 2px solid #074664; }
+.review 	{ text-indent: 2em; }
+.image-shadow { box-shadow: 0 4px 8px 0 rgba(10, 47, 81, 0.5), 0 8px 12px 0 rgba(10, 47, 81, 0.5) }
+.button		{ background-color: #188977; color: #ffffff ;border: 3px solid #0E4D64; border-radius: 8px; padding: 6px 9px; font-size: 14px}
+.button:hover	{background-color: #137177;  border-color: #99D492;}
+
+input[type="text"], textarea { background-color : #F4F0E8; color: #0A2F51; }
+input[type=text] { margin: .5em 0; padding: .5em; font-size: 14px; width: 200px; }
+input[type=textarea] { margin: .5em 0; padding: .5em; font-size: 14px; width: 200px; }
+
+
+
